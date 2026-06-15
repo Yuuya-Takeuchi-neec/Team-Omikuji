@@ -10,7 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (logs.length === 0) {
             /* ここに追加 */
-
+            list.innerHTML = `
+                <li style="justify-content: center; color: #95a5a6;">
+                    まだおみくじを引いていません。
+                </li>
+            `.trim();
             return;
         }
 
